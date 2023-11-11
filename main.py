@@ -1,10 +1,15 @@
+'''
+
+
+'''
+
 from random import randint
 
 words_uniq = []
 words = ''
 
 with open('input.txt') as f_in:
-    ptrs = f_in.readline()
+    ptrs = int(f_in.readline())
     for x in f_in:
         if x != ptrs:
             ptr = x.split()
@@ -20,3 +25,6 @@ for i in range(len(words_uniq)):
     while words_uniq[i] in wrd:
         wrd.remove(words_uniq[i])
     words_for_words.append(wrd)
+
+for i in range(ptrs):
+    ind_1
