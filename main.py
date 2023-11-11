@@ -9,7 +9,7 @@ with open('input.txt') as f_in:
         if x != ptrs:
             ptr = x.split()
             for i in range(len(ptr)):
-                if ptr[i] not in words:
+                if ptr[i] not in words_uniq:
                     words_uniq.append(ptr[i])
                 words += ptr[i]
 
