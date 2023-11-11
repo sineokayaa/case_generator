@@ -20,8 +20,8 @@ with open('input.txt') as f_in:
 
 words_for_words = []
 for i in range(len(words_uniq)):
-    ind = words.rfind(words_uniq[i])
-    wrd = words[:ind].split()
+    ind = words.find(words_uniq[i])
+    wrd = words[ind + len(words_uniq[i]):].split()
     while words_uniq[i] in wrd:
         wrd.remove(words_uniq[i])
     words_for_words.append(wrd)
