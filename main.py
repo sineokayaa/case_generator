@@ -40,7 +40,7 @@ with open('output.txt', 'w', encoding='utf8') as f_out:
         sentence = word_1
         count_wrds = 0
         while word[-1] not in '.?!' or count_wrds > 20:
-            ind = words_for_words.index(word)
+            ind = words_uniq.index(word)
             ind_new = randint(0, len(words_for_words[ind]) - 1)
             word = words_for_words[ind][ind_new]
             sentence += word
