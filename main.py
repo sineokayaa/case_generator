@@ -1,6 +1,6 @@
 '''
 Group:
-Varfolomeeva Viktoria
+Varfolomeeva Viktoria 50
 Sineokaya Anastasiya 55
 '''
 
