@@ -7,6 +7,7 @@ from random import randint
 
 words_uniq = []
 words = ''
+words_up = []
 
 with open('input.txt') as f_in:
     ptrs = int(f_in.readline())
@@ -16,6 +17,8 @@ with open('input.txt') as f_in:
             for i in range(len(ptr)):
                 if ptr[i] not in words_uniq:
                     words_uniq.append(ptr[i])
+                if ptr[i] not in words_up and ptr[i][0] in 'ЙЦУКЕНГШЩЗХЪЭЖДЛОРПАВЫФЯЧСМИТЬБЮQWERTYUIOPLKJHGFDSAZXCVBNM':
+                    words_up.append(ptr[i])
                 words += ptr[i]
 
 words_for_words = []
