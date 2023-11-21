@@ -1,7 +1,7 @@
 '''
 Group:
-Varfolomeeva Viktoria 50
-Sineokaya Anastasiya 55
+Varfolomeeva Viktoria 90
+Sineokaya Anastasiya 92
 '''
 
 from random import randint
@@ -51,6 +51,10 @@ with open('output.txt', 'w', encoding='utf8') as f_out:
             word = words_for_words[ind][ind_new]
             sentence += ' ' + word
             count_wrds += 1
-
+            if count_wrds == 20:
+                if sentence[-1] in ',:;^-':
+                    sentence = sentence[:-1] + '.'
+                else:
+                    sentence += '.'
         print(sentence, file=f_out)
         count_ptrs += 1
