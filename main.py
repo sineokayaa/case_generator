@@ -40,7 +40,7 @@ with open('output.txt', 'w', encoding='utf8') as f_out:
         word_1 = words_up[ind_1]
         word = word_1
         sentence = word_1
-        count_wrds = 0
+        count_wrds = 1
 
         while word[-1] not in '.?!' and count_wrds <= 20:
             ind = words_uniq.index(word)
